@@ -1,0 +1,62 @@
+$(document).ready(function(){
+    $(".services-carousel").owlCarousel({
+    //  rtl:true,
+      loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:3,
+            nav:true,
+            loop:false
+        }
+      }
+    });
+  });
+
+  $(document).ready(function(){
+    $(".pic").owlCarousel({
+     rtl:true,
+     margin:5,
+      loop:true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:4,
+            nav:false
+        },
+        1000:{
+            items:4,
+            nav:true,
+            loop:false
+        }
+      }
+    });
+  });
+
+ 
+/*
+$(document).ready(function(){
+  $(".hidden").hide();});
+  $(document).ready(function(){
+$(".btn").click(function(){
+$(".hidden").show();
+})});
+$(document).ready(function(){
+  $(".btn").dblclick(function(){
+  $(".hidden").fadeToggle();
+  })});
+
+ */ 
