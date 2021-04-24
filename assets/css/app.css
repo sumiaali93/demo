@@ -32,7 +32,7 @@ margin-bottom: 40px;
 }
 
 .my-card img{
-    width: 50%;
+    width: 15rem;
 }
 .card-carousel {
     display: flex;
@@ -42,8 +42,8 @@ margin-bottom: 40px;
   }
   
   .card-carousel .my-card {
-    height: 20rem;
-    width: 12rem;
+    /* height: 20rem; */
+    /* width: 8rem; */
     position: relative;
     z-index: 1;
     -webkit-transform: scale(0.6) translateY(-2rem);
@@ -51,8 +51,8 @@ margin-bottom: 40px;
     opacity: 0;
     cursor: pointer;
     pointer-events: none;
-    background: #2e5266;
-    background: linear-gradient(to top, #2e5266, #6e8898);
+    /* background: #2e5266;
+    background: linear-gradient(to top, #2e5266, #6e8898); */
     transition: 1s;
   }
   
@@ -84,6 +84,12 @@ margin-bottom: 40px;
     opacity: 0.6;
     pointer-events: auto;
     transition: 1s;
+  }
+  .card-carousel .my-card.prev {
+    margin-left: -100px;
+  }
+  .card-carousel .my-card.next {
+    margin-right: -100px;
   }
   .owl-prev ,.owl-next{
 border: none;
